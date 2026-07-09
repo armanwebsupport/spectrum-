@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spectrum By Pink Makeover</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <header class="navbar">
+
+            <div class="logo">
+                <h1>Spectrum</h1>
+                <span>BY PINK MAKEOVER</span>
+            </div>
+
+            <div class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </header>
+
+        <div class="hero-content">
+
+            <div class="tagline">
+                <div class="line"></div>
+                <p>SAMBALPUR EST. PINK MAKEOVER LEGACY</p>
+            </div>
+
+            <h2>
+                Where beauty<br>
+                meets <span>precision.</span>
+            </h2>
+
+            <p class="description">
+                Where beauty meets precision. From bridal couture
+                to luxury hair rituals, every service is crafted
+                to make you look unforgettable.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SIDE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
