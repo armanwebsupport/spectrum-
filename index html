@@ -69,7 +69,47 @@
         <a href="#">Contact</a>
 
     </div>
+<!-- RITUALS SECTION -->
 
+<section class="rituals">
+
+    <div class="section-title">
+        <p>OUR SIGNATURE</p>
+        <h2>Beauty Rituals</h2>
+    </div>
+
+    <div class="ritual-container">
+
+        <div class="ritual-card">
+            <img src="images/ritual1.jpg" alt="Luxury Hair Ritual">
+            <h3>Luxury Hair Ritual</h3>
+            <p>
+                Experience nourishing hair treatments that restore shine,
+                strength and elegance.
+            </p>
+        </div>
+
+        <div class="ritual-card">
+            <img src="images/ritual2.jpg" alt="Skin Ritual">
+            <h3>Skin Ritual</h3>
+            <p>
+                Premium skincare rituals designed to reveal naturally
+                radiant and glowing skin.
+            </p>
+        </div>
+
+        <div class="ritual-card">
+            <img src="images/ritual3.jpg" alt="Bridal Ritual">
+            <h3>Bridal Ritual</h3>
+            <p>
+                Bespoke bridal makeup and styling crafted for your
+                unforgettable wedding day.
+            </p>
+        </div>
+
+    </div>
+
+</section>
     <script src="script.js"></script>
 
 </body>
