@@ -38,3 +38,8 @@ window.addEventListener("load", () => {
     },1500);
 
 });
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
