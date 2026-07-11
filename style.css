@@ -994,3 +994,66 @@ transform:translateY(0);
 }
 
 }
+/* ==========================
+   COUNTER SECTION
+========================== */
+
+.counter-section{
+
+    padding:80px 8%;
+
+    background:#111;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+.counter-box{
+
+    color:#fff;
+
+}
+
+.counter-box h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    color:#d8a5b6;
+
+    margin-bottom:10px;
+
+}
+
+.counter-box p{
+
+    font-size:17px;
+
+    color:#ddd;
+
+}
+
+@media(max-width:768px){
+
+.counter-section{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.counter-box h2{
+
+font-size:40px;
+
+}
+
+}
