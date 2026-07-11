@@ -890,3 +890,56 @@ left:100%;
     transform:translateY(-5px);
     background:#b96f84;
 }
+/* ==========================
+   LIGHTBOX
+========================== */
+
+#lightbox{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:rgba(0,0,0,.9);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:12px;
+
+}
+
+#closeLightbox{
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+font-size:50px;
+
+color:white;
+
+cursor:pointer;
+
+    }
