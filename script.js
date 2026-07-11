@@ -21,3 +21,20 @@ document.addEventListener("click", (e) => {
         mobileMenu.classList.remove("active");
     }
 });
+/* PRELOADER */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        document.getElementById("preloader").style.opacity = "0";
+
+        setTimeout(() => {
+
+            document.getElementById("preloader").style.display = "none";
+
+        },800);
+
+    },1500);
+
+});
