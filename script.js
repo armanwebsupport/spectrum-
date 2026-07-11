@@ -115,3 +115,32 @@ lightbox.style.display="none";
 }
 
 });
+/* TESTIMONIAL SLIDER */
+
+const testimonials = document.querySelectorAll(".testimonial");
+
+let currentTestimonial = 0;
+
+function showTestimonial(){
+
+    testimonials.forEach((item)=>{
+
+        item.classList.remove("active");
+
+    });
+
+    testimonials[currentTestimonial].classList.add("active");
+
+    currentTestimonial++;
+
+    if(currentTestimonial>=testimonials.length){
+
+        currentTestimonial=0;
+
+    }
+
+}
+
+showTestimonial();
+
+setInterval(showTestimonial,4000);
