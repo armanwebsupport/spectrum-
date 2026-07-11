@@ -755,3 +755,104 @@ width:34px;
 filter:invert(1);
 
 }
+/* ==========================
+   PRELOADER
+========================== */
+
+#preloader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:#111;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:opacity .8s;
+
+}
+
+.loader-content{
+
+text-align:center;
+
+}
+
+.loader-content h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:60px;
+
+color:#fff;
+
+}
+
+.loader-content p{
+
+letter-spacing:6px;
+
+font-size:13px;
+
+margin-top:10px;
+
+color:#d8a5b6;
+
+}
+
+.loader-line{
+
+width:180px;
+
+height:3px;
+
+background:#444;
+
+margin:35px auto;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.loader-line::after{
+
+content:"";
+
+position:absolute;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:#d8a5b6;
+
+animation:loading 2s linear infinite;
+
+}
+
+@keyframes loading{
+
+100%{
+
+left:100%;
+
+}
+
+}
