@@ -943,3 +943,54 @@ color:white;
 cursor:pointer;
 
     }
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonials{
+    padding:100px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.testimonial-slider{
+    max-width:800px;
+    margin:60px auto 0;
+    position:relative;
+}
+
+.testimonial{
+    display:none;
+    animation:fadeTestimonial .6s;
+}
+
+.testimonial.active{
+    display:block;
+}
+
+.testimonial p{
+    font-size:22px;
+    line-height:1.8;
+    color:#555;
+    font-style:italic;
+}
+
+.testimonial h4{
+    margin-top:25px;
+    color:#d18b9f;
+    font-size:20px;
+}
+
+@keyframes fadeTestimonial{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
