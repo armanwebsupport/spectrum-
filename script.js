@@ -194,3 +194,22 @@ counters.forEach(counter => {
     counterObserver.observe(counter);
 
 });
+/* BOOKING POPUP */
+
+const bookingModal = document.getElementById("bookingModal");
+const bookNowBtn = document.getElementById("bookNowBtn");
+const closeBooking = document.getElementById("closeBooking");
+
+bookNowBtn.addEventListener("click", () => {
+    bookingModal.style.display = "flex";
+});
+
+closeBooking.addEventListener("click", () => {
+    bookingModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === bookingModal) {
+        bookingModal.style.display = "none";
+    }
+});
