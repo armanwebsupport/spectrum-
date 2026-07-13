@@ -268,3 +268,44 @@ faqItems.forEach(item => {
         item.classList.toggle("active");
     });
 });
+/* EMAILJS BOOKING */
+
+const bookingForm = document.getElementById("bookingForm");
+
+bookingForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    emailjs.send("service_qkv4ooq", "template_qozx6pp", {
+
+        name: document.getElementById("name").value,
+
+        phone: document.getElementById("phone").value,
+
+        email: document.getElementById("email").value,
+
+        date: document.getElementById("date").value,
+
+        message: document.getElementById("message").value
+
+    })
+
+    .then(() => {
+
+        alert("✅ Appointment request sent successfully!");
+
+        bookingForm.reset();
+
+        document.getElementById("bookingModal").style.display = "none";
+
+    })
+
+    .catch((error) => {
+
+        alert("❌ Failed to send. Please try again.");
+
+        console.error(error);
+
+    });
+
+});
