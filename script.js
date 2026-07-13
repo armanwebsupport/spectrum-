@@ -213,3 +213,38 @@ window.addEventListener("click", (e) => {
         bookingModal.style.display = "none";
     }
 });
+/* ==========================
+   PREMIUM SERVICES ACCORDION
+========================== */
+
+const serviceItems = document.querySelectorAll(".service-item");
+
+serviceItems.forEach(item => {
+
+    const title = item.querySelector(".service-title");
+
+    title.addEventListener("click", () => {
+
+        // Agar ek time me sirf ek accordion open rakhna hai
+        serviceItems.forEach(other => {
+
+            if (other !== item) {
+                other.classList.remove("active");
+                other.querySelector(".service-content").style.maxHeight = null;
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+        const content = item.querySelector(".service-content");
+
+        if (item.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+            content.style.maxHeight = null;
+        }
+
+    });
+
+});
