@@ -1452,3 +1452,17 @@ transform:scale(1);
     transform:translateX(8px) scale(1.1);
     box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all .3s ease;
+}
+
+.navbar.scrolled{
+    background: rgba(0,0,0,.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
