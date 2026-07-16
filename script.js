@@ -220,9 +220,7 @@ window.addEventListener("click", (e) => {
         bookingModal.style.display = "none";
     }
 });
-heroBookBtn.addEventListener("click", () => {
-    bookingModal.style.display = "flex";
-});
+
 /* ==========================
    PREMIUM SERVICES ACCORDION
 ========================== */
