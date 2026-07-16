@@ -199,12 +199,16 @@ counters.forEach(counter => {
 const bookingModal = document.getElementById("bookingModal");
 const bookNowBtn = document.getElementById("bookNowBtn");
 const contactBookBtn = document.getElementById("contactBookBtn");
+const heroBookBtn = document.getElementById("heroBookBtn");
 const closeBooking = document.getElementById("closeBooking");
 
 bookNowBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
 });
 contactBookBtn.addEventListener("click", () => {
+    bookingModal.style.display = "flex";
+});
+heroBookBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
 });
 closeBooking.addEventListener("click", () => {
