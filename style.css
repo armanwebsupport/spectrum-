@@ -1613,3 +1613,26 @@ transform:scale(1);
     transform:translateY(-3px);
     background:#b9932f;
 }
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-book-btn{
+    background:#d4af37;
+    color:#fff;
+    border:none;
+    padding:14px 36px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.hero-book-btn:hover{
+    background:#b88a17;
+    transform:translateY(-3px);
+}
