@@ -202,25 +202,33 @@ const contactBookBtn = document.getElementById("contactBookBtn");
 const heroBookBtn = document.getElementById("heroBookBtn");
 const closeBooking = document.getElementById("closeBooking");
 
-bookNowBtn.addEventListener("click", () => {
+if (bookNowBtn) {
+  bookNowBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
-});
-contactBookBtn.addEventListener("click", () => {
+  });
+}
+
+if (contactBookBtn) {
+  contactBookBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
-});
-heroBookBtn.addEventListener("click", () => {
+  });
+}
+
+if (heroBookBtn) {
+  heroBookBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
-});
+  });
+}
+
 closeBooking.addEventListener("click", () => {
-    bookingModal.style.display = "none";
+  bookingModal.style.display = "none";
 });
 
 window.addEventListener("click", (e) => {
-    if (e.target === bookingModal) {
-        bookingModal.style.display = "none";
-    }
+  if (e.target === bookingModal) {
+    bookingModal.style.display = "none";
+  }
 });
-
 /* ==========================
    PREMIUM SERVICES ACCORDION
 ========================== */
