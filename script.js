@@ -198,12 +198,15 @@ counters.forEach(counter => {
 
 const bookingModal = document.getElementById("bookingModal");
 const bookNowBtn = document.getElementById("bookNowBtn");
+const contactBookBtn = document.getElementById("contactBookBtn");
 const closeBooking = document.getElementById("closeBooking");
 
 bookNowBtn.addEventListener("click", () => {
     bookingModal.style.display = "flex";
 });
-
+contactBookBtn.addEventListener("click", () => {
+    bookingModal.style.display = "flex";
+});
 closeBooking.addEventListener("click", () => {
     bookingModal.style.display = "none";
 });
